@@ -22,7 +22,7 @@ GEM
     public_suffix (3.0.3)
     rake (10.4.2)
     safe_yaml (1.0.4)
-    webmock (3.4.2)
+    webmock (2.3.2)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
@@ -36,7 +36,7 @@ DEPENDENCIES
   httparty
   minitest (~> 5.0)
   rake (~> 10.0)
-  webmock
+  webmock (~> 2.1)
 
 BUNDLED WITH
    1.16.5
