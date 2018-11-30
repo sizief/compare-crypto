@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem "webmock", "~> 2.1"
-gem "httparty"
+gem "faraday"
 gem "bundler", "~> 1.16"
 gem "rake", "~> 10.0"
 gem "minitest", "~> 5.0"

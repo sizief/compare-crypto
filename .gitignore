@@ -9,3 +9,4 @@
 crypto.rb
 .env
 Gemfile.lock
+vendor/
