@@ -4,4 +4,3 @@ require "bundler/setup"
 require_relative "../lib/compare-crypto"
 
 puts CompareCrypto::Price.find ARGV[0], ARGV[1]
-

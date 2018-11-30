@@ -27,14 +27,16 @@ Or install it yourself as:
 1. Rename the `.env.example` to `.env`
 2. Update the `.env` file with Twitter API tokens
 3. Update the Interval number in `.env`
-4. run `whenever --update-crontab`
+4. run  
+    $ whenever --update-crontab
 
 
 To disable the cron job, comment the `config/schedule.rb` and run `whenever --update-crontab`. Check your current cron status with `crontab -l`
 
 ## CLI
 
-run `cc BTC USD`
+    $ gem install compare-crypto
+    $ compare-crypto BTC USD
 
 ## Contributing
 
