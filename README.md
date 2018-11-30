@@ -11,10 +11,14 @@ Get the latest tarde price for different cryptocurrencies and send it to
 1. Rename the `.env.example` to `.env`
 2. Update the `.env` file with Twitter API tokens
 3. Update the Interval number in `.env`
-4. Install dependencies 
+4. Install dependencies  
+```
     $ bundle install
-5. Set cron job
-    $ whenever --update-crontab
+```
+5. Set cron job  
+```
+    $$ whenever --update-crontab
+```
 
 
 To disable the cron job, comment the `config/schedule.rb` and run `whenever --update-crontab`. Check your current cron status with `crontab -l`
