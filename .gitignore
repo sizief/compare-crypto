@@ -8,3 +8,4 @@
 /tmp/
 crypto.rb
 .env
+Gemfile.lock

@@ -1,5 +1,5 @@
-require "compare-crypto/version"
-require "compare-crypto/gateway"
+require_relative "compare-crypto/version"
+require_relative "compare-crypto/gateway"
 require "json"
 require 'dotenv/load'
 

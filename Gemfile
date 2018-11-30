@@ -1,6 +1,10 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
-
-# Specify your gem's dependencies in compare-crypto.gemspec
-gemspec
+gem "webmock", "~> 2.1"
+gem "httparty"
+gem "bundler", "~> 1.16"
+gem "rake", "~> 10.0"
+gem "minitest", "~> 5.0"
+gem "dotenv", "~> 2.5.0"
+gem "whenever"
+gem "twitter", "~> 6.2.0"

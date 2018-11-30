@@ -9,7 +9,12 @@ client = Twitter::REST::Client.new do |config|
   config.access_token_secret = ENV['TOKEN_SECRET']
 end
 
+
 message = Array.new
+puts "creating pairs"
 pairs = [{'BTC'=>'USD'}, {'ETH'=>'USD'}, {'BTC'=>'IRR'}]
 pairs.each {|pair| message << CompareCrypto::Price.find(pair.keys[0], pair.values[0])}
+puts "#{message} created"
+#client.update("test")
 client.update(message.map{|item| item[:amount]+" #"+item[:currency]+"\n"}.join)
+puts "job done"
