@@ -3,31 +3,17 @@
 Get the latest tarde price for different cryptocurrencies and send it to
 
 
-- twitter [Original bot Twitter account]((https://twitter.com/Cryptoprice2)
+- Twitter [This one for example](https://twitter.com/Cryptoprice2)
 - TODO: Slack 
 
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'compare-crypto'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install compare-crypto
 
 ## Usage
 1. Rename the `.env.example` to `.env`
 2. Update the `.env` file with Twitter API tokens
 3. Update the Interval number in `.env`
-4. run  
+4. Install dependencies 
+    $ bundle install
+5. Set cron job
     $ whenever --update-crontab
 
 
@@ -35,8 +21,7 @@ To disable the cron job, comment the `config/schedule.rb` and run `whenever --up
 
 ## CLI
 
-    $ gem install compare-crypto
-    $ compare-crypto BTC USD
+    $ bin/compare-crypto BTC USD
 
 ## Contributing
 

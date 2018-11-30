@@ -5,7 +5,7 @@ module CompareCrypto
   class Gateway
     include HTTParty
     BASE_URL = 'https://min-api.cryptocompare.com/data/'
-    API_KEY = '995291cca787702fab2f1a992923ea60691c07e19e8e56b37630488ed8065fb8'
+    API_KEY = ENV['CRYPTOCOMPARE_TOKEN']
     
     def initialize args
       @source = args[:source] #BTC
