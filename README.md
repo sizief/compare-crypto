@@ -17,7 +17,7 @@ Get the latest tarde price for different cryptocurrencies and send it to
 ```
 5. Set cron job  
 ```
-    $$ whenever --update-crontab
+    $ bundle exec whenever --update-crontab
 ```
 
 

@@ -8,5 +8,6 @@
 /tmp/
 crypto.rb
 .env
+.DS*
 Gemfile.lock
 vendor/

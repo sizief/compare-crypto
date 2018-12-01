@@ -1,7 +1,7 @@
-require_relative "compare-crypto/version"
-require_relative "compare-crypto/gateway"
 require "json"
 require 'dotenv/load'
+require_relative "compare-crypto/version"
+require_relative "compare-crypto/gateway"
 
 module CompareCrypto 
   class Price
