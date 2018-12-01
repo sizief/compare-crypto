@@ -1,4 +1,4 @@
-require 'HTTParty'
+require 'faraday'
 require 'uri'
 
 module CompareCrypto
@@ -14,7 +14,7 @@ module CompareCrypto
 
     def get_price
       response = send_request prepare_url "price?fsym=#{@source}&tsyms=#{@target}"
-      {body: response.body, code: response.code}
+      {body: response.body, code: response.status}
     end
 
     def prepare_url path
@@ -23,7 +23,7 @@ module CompareCrypto
     
     private
     def send_request url
-      HTTParty.get(url)
+      Faraday.get(url)
     end
   end
 end
