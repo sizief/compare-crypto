@@ -23,5 +23,5 @@ require 'dotenv/load'
 
 set :output, "#{Dir.pwd}/log/cron.log"
 every ENV['INTERVAL'].to_f.minutes do
-  command "cd #{Dir.pwd} && ruby #{Dir.pwd}/twitter.rb"
+  command "cd #{Dir.pwd} && bundle exec ruby #{Dir.pwd}/twitter.rb"
 end
