@@ -3,7 +3,6 @@ require 'uri'
 
 module CompareCrypto
   class Gateway
-    include HTTParty
     BASE_URL = 'https://min-api.cryptocompare.com/data/'
     API_KEY = ENV['CRYPTOCOMPARE_TOKEN']
     
