@@ -1,6 +1,11 @@
 #!/usr/bin/env ruby
+require 'bundler/setup'
+require_relative '../lib/compare-crypto'
 
-require "bundler/setup"
-require_relative "../lib/compare-crypto"
+welcome_message = <<~USAGE.freeze
+        Welcome to Compare Crypto! 
+        Getting data, please wait...
+USAGE
 
-puts CompareCrypto::Price.find ARGV[0], ARGV[1]
+puts welcome_message.light_red
+puts CompareCrypto::Main.run ARGV
