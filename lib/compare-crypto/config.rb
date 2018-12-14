@@ -1,10 +1,11 @@
 module CompareCrypto
   class Config
     @cryptocompare_token = ENV['CRYPTOCOMPARE_TOKEN'].freeze
+    @log_path = './compare-crypto/log_file'
     class << self
       attr_accessor :consumer_key, :consumer_secret, :access_token,
                     :interval, :token_secret, :cryptocompare_token,
-                    :source, :target
+                    :source, :target, :log, :log_path
       def twitter
         @consumer_key = ENV['CONSUMER_KEY']
         @consumer_secret = ENV['CONSUMER_SECRET']

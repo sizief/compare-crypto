@@ -11,3 +11,4 @@ crypto.rb
 .DS*
 Gemfile.lock
 vendor
+*log_file*

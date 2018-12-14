@@ -2,10 +2,4 @@
 require 'bundler/setup'
 require_relative '../lib/compare-crypto'
 
-welcome_message = <<~USAGE.freeze
-        Welcome to Compare Crypto! 
-        Getting data, please wait...
-USAGE
-
-puts welcome_message.light_red
-puts CompareCrypto::Main.run ARGV
+CompareCrypto::Main.run ARGV
