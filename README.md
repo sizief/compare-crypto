@@ -1,6 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/e861c24087df75e48d2d/maintainability)](https://codeclimate.com/github/sizief/compare-crypto/maintainability)
-
-[![CircleCI](https://circleci.com/gh/sizief/compare-crypto.svg?style=svg)](https://circleci.com/gh/sizief/compare-crypto)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e861c24087df75e48d2d/maintainability)](https://codeclimate.com/github/sizief/compare-crypto/maintainability) [![CircleCI](https://circleci.com/gh/sizief/compare-crypto.svg?style=svg)](https://circleci.com/gh/sizief/compare-crypto)
 
 # Compare::Crypto
 
