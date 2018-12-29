@@ -1,3 +1,7 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/e861c24087df75e48d2d/maintainability)](https://codeclimate.com/github/sizief/compare-crypto/maintainability)
+
+[![CircleCI](https://circleci.com/gh/sizief/compare-crypto.svg?style=svg)](https://circleci.com/gh/sizief/compare-crypto)
+
 # Compare::Crypto
 
 Get the latest tarde price for different cryptocurrencies and send it to
@@ -26,6 +30,8 @@ To disable the cron job, comment the `config/schedule.rb` and run `whenever --up
 ## CLI
 
     $ bin/compare-crypto BTC USD
+    
+use -l to log.
 
 ## Contributing
 
